@@ -28,6 +28,7 @@ Liens a traiter :
 - Code wiki - 2026-05-06 - https://x.com/i/status/2051690823193088106
 - Claude Team - Cowork, taches paralleles et taches planifiees - mail original du 2026-03-23, transfere vers mylor le 2026-05-06 - https://mail.google.com/mail/#all/19dfe0c5d00b1255
 - Browser ai agents ++ - 2026-04-19 - https://x.com/i/status/2045566281991311483
+- Browser Use - 2026-05-06 - https://x.com/browser_use/status/2051826281914978801
 - Open ai agents - 2026-04-19 - https://x.com/i/status/2045533747857240290
 - Multi agent - 2026-04-14 - https://x.com/i/status/2043607288791826581
 - Open claw et olama gratuit - 2026-04-15 - https://x.com/i/status/2044043948243517454

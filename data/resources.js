@@ -148,7 +148,7 @@ window.AI_RESOURCES = [
   },
   {
     id: "x-collecte-agents",
-    title: "Lot X - agents, Claude, OpenClaw, browser agents",
+    title: "Lot X - agents, Claude, OpenClaw, Browser Use, browser agents",
     url: "multiple-x",
     canonicalUrl: "multiple-x",
     sourceType: "X",
@@ -159,10 +159,11 @@ window.AI_RESOURCES = [
     status: "X inaccessible",
     freshness: "a verifier",
     confidence: "faible",
-    summary: "Ce lot contient les posts X sur agents, browser agents, OpenAI agents, OpenClaw/Ollama/Gemma, Claude SEO, Prompt Master, Claude MD, Chrome Claude, Outils Claude code, Google AI, Code wiki et Entreprise 100% agents. Les emails contiennent essentiellement les URLs ; le contenu des posts n'a pas pu etre lu de maniere fiable depuis l'environnement actuel.",
+    summary: "Ce lot contient les posts X sur agents, browser agents, Browser Use, OpenAI agents, OpenClaw/Ollama/Gemma, Claude SEO, Prompt Master, Claude MD, Chrome Claude, Outils Claude code, Google AI, Code wiki et Entreprise 100% agents. Les emails contiennent essentiellement les URLs ; le contenu des posts n'a pas pu etre lu de maniere fiable depuis l'environnement actuel.",
     links: [
       "https://x.com/i/status/2050289242371178569",
       "https://x.com/i/status/2051690823193088106",
+      "https://x.com/browser_use/status/2051826281914978801",
       "https://x.com/i/status/2045566281991311483",
       "https://x.com/i/status/2045533747857240290",
       "https://x.com/i/status/2043607288791826581",
@@ -182,7 +183,7 @@ window.AI_RESOURCES = [
       "https://x.com/i/status/2040500903296352663",
       "https://x.com/i/status/2039775710613483671"
     ],
-    keyConcepts: ["agents", "browser automation", "Claude Code", "OpenClaw", "LLM local", "SEO agent"],
+    keyConcepts: ["agents", "browser automation", "Browser Use", "Claude Code", "OpenClaw", "LLM local", "SEO agent"],
     whatToLearn: "Recuperer le texte exact ou captures de ces posts, puis transformer chaque idee en fiche testable.",
     action30: "Ouvrir 5 posts X prioritaires en session authentifiee et coller le texte dans data/extracted_content/x-captures.md.",
     miniProject: "Agent 'veille X propre' : quand un lien X est envoye, il demande le texte si la lecture est bloquee, puis cree une fiche complete.",

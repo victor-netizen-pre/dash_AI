@@ -31,3 +31,16 @@ Action 30 min :
 Statut :
 ```
 
+## https://x.com/browser_use/status/2051826281914978801
+
+Texte du post : a recuperer.
+
+Auteur : Browser Use.
+
+Date : 2026-05-06.
+
+Concepts pressentis : browser automation, agents IA, navigation web outillee.
+
+Action 30 min : ouvrir le post en session X authentifiee, coller le texte exact ici, puis transformer en fiche actionnable.
+
+Statut : X inaccessible depuis l'environnement actuel.
