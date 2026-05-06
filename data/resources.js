@@ -147,6 +147,27 @@ window.AI_RESOURCES = [
     contentFile: "data/extracted_content/stanford-ai-systems-course.md"
   },
   {
+    id: "browser-harness",
+    title: "Browser Harness - agents navigateur auto-reparables",
+    url: "https://www.browser-harness.com/",
+    canonicalUrl: "https://github.com/browser-use/browser-harness",
+    sourceType: "web + github",
+    sourceDate: "2026",
+    collectedDate: "2026-05-06",
+    lastVerified: "2026-05-06",
+    theme: "Agents IA / navigateur",
+    status: "contenu lu",
+    freshness: "actuel",
+    confidence: "forte",
+    summary: "Browser Harness est un harness open source pour connecter un LLM directement a un navigateur via CDP. Le projet met l'accent sur des agents qui modifient leurs propres helpers pendant l'execution, utilisent un Chrome local ou des navigateurs cloud Browser Use, et capitalisent des domain skills reutilisables pour les sites frequents.",
+    keyConcepts: ["CDP", "self-healing browser agents", "helpers editables", "domain skills", "cloud browsers", "Browser Use"],
+    whatToLearn: "Comprendre comment donner a un agent navigateur assez de liberte pour agir, tout en gardant une architecture inspectable : harness mince, helpers editables, skills par domaine, logs et permissions.",
+    action30: "Lire `install.md` et `SKILL.md` du repo, puis noter le flux d'installation, les permissions Chrome remote debugging et les garde-fous necessaires.",
+    miniProject: "Prototype 'agent navigateur QA' : ouvrir un site test, detecter un flux casse, creer un helper reutilisable, puis documenter le skill de domaine genere.",
+    risks: ["Remote debugging donne beaucoup de pouvoir", "Isoler les profils Chrome", "Ne pas utiliser sur comptes sensibles sans garde-fous", "Verifier chaque helper genere avant reutilisation"],
+    contentFile: "data/extracted_content/browser-harness.md"
+  },
+  {
     id: "x-collecte-agents",
     title: "Lot X - agents, Claude, OpenClaw, Browser Use, browser agents",
     url: "multiple-x",
