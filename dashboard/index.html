@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard competences IA</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Base de competences</p>
+        <h1>Dashboard IA</h1>
+      </div>
+      <div class="status-strip" id="statusStrip"></div>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="Filtres">
+        <label>
+          Recherche
+          <input id="searchInput" type="search" placeholder="MCP, Claude, scraping..." />
+        </label>
+        <label>
+          Theme
+          <select id="themeFilter"></select>
+        </label>
+        <label>
+          Statut contenu
+          <select id="statusFilter"></select>
+        </label>
+        <label>
+          Fraicheur
+          <select id="freshnessFilter"></select>
+        </label>
+      </section>
+
+      <section class="summary-grid" id="summaryGrid" aria-label="Synthese"></section>
+
+      <section class="concept-panel">
+        <div>
+          <p class="eyebrow">Concepts dominants</p>
+          <h2>Ce que la base te pousse a apprendre</h2>
+        </div>
+        <div id="conceptCloud" class="concept-cloud"></div>
+      </section>
+
+      <section class="cards" id="cards"></section>
+    </main>
+
+    <script src="../data/resources.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
