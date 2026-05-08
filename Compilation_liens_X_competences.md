@@ -13,10 +13,10 @@ Le dashboard distingue maintenant :
 - les contenus reellement lus,
 - les mails lus,
 - les sources partielles,
-- les posts X/Twitter dont le contenu reste a recuperer,
+- les posts X/Twitter dont le contenu a ete recupere via oEmbed quand possible,
 - la fraicheur et le niveau de confiance.
 
-Les fiches contenu sont dans `data/extracted_content/`. Pour les posts X bloques, coller le texte ou une capture dans `data/extracted_content/x-captures.md` avant d'en tirer une synthese.
+Les fiches contenu sont dans `data/extracted_content/`. Les textes X recuperes automatiquement sont dans `data/extracted_content/x-oembed.md`. Pour les medias, images, videos ou threads incomplets, completer avec `data/extracted_content/x-captures.md`.
 
 ## Priorite 1 - IA agents, automatisation, orchestration
 

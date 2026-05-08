@@ -176,11 +176,11 @@ window.AI_RESOURCES = [
     sourceDate: "2026-04/2026-05",
     collectedDate: "2026-05-06",
     lastVerified: "2026-05-06",
-    theme: "Agents IA / contenu a recuperer",
-    status: "X inaccessible",
+    theme: "Agents IA / contenu recupere",
+    status: "contenu lu via X oEmbed",
     freshness: "a verifier",
-    confidence: "faible",
-    summary: "Ce lot contient les posts X sur agents, browser agents, Browser Use, OpenAI agents, OpenClaw/Ollama/Gemma, Claude SEO, Prompt Master, Claude MD, Chrome Claude, Outils Claude code, Google AI, Code wiki et Entreprise 100% agents. Les emails contiennent essentiellement les URLs ; le contenu des posts n'a pas pu etre lu de maniere fiable depuis l'environnement actuel.",
+    confidence: "moyenne",
+    summary: "Ce lot contient les posts X sur agents, browser agents, Browser Use, OpenAI agents, OpenClaw/Ollama/Gemma, Claude SEO, Prompt Master, Claude MD, Chrome Claude, Outils Claude code, Google AI, Code wiki et Entreprise 100% agents. Le texte des posts a ete recupere automatiquement via l'endpoint officiel X oEmbed ; les medias, images et eventuels threads longs restent a verifier separement.",
     links: [
       "https://x.com/i/status/2050289242371178569",
       "https://x.com/i/status/2051690823193088106",
@@ -205,11 +205,11 @@ window.AI_RESOURCES = [
       "https://x.com/i/status/2039775710613483671"
     ],
     keyConcepts: ["agents", "browser automation", "Browser Use", "Claude Code", "OpenClaw", "LLM local", "SEO agent"],
-    whatToLearn: "Recuperer le texte exact ou captures de ces posts, puis transformer chaque idee en fiche testable.",
-    action30: "Ouvrir 5 posts X prioritaires en session authentifiee et coller le texte dans data/extracted_content/x-captures.md.",
-    miniProject: "Agent 'veille X propre' : quand un lien X est envoye, il demande le texte si la lecture est bloquee, puis cree une fiche complete.",
-    risks: ["Ne pas inferer le contenu depuis le sujet du mail", "X peut masquer, supprimer ou modifier l'acces"],
-    contentFile: "data/extracted_content/x-captures.md"
+    whatToLearn: "Transformer les textes X recuperes en fiches testables : concept, outil, niveau de preuve, action 30 minutes.",
+    action30: "Prendre 5 posts dans data/extracted_content/x-oembed.md et produire une fiche competence/action pour chacun.",
+    miniProject: "Agent 'veille X propre' : a chaque lien X, il tente oEmbed, archive le texte, marque les medias a verifier, puis cree une fiche complete.",
+    risks: ["oEmbed recupere surtout le texte visible du post", "Les medias et threads longs peuvent etre incomplets", "Verifier les sources primaires avant decision"],
+    contentFile: "data/extracted_content/x-oembed.md"
   },
   {
     id: "x-collecte-production",
@@ -221,10 +221,10 @@ window.AI_RESOURCES = [
     collectedDate: "2026-05-06",
     lastVerified: "2026-05-06",
     theme: "Production IA / web / data",
-    status: "X inaccessible",
+    status: "contenu lu via X oEmbed",
     freshness: "a verifier",
-    confidence: "faible",
-    summary: "Ce lot regroupe les liens X sur mise en production, scraping, OCR PDF, voix IA, SMS, clause e-commerce, backlink et design. Les concepts sont seulement inferes depuis les objets des mails ; le texte des posts doit etre recupere avant synthese serieuse.",
+    confidence: "moyenne",
+    summary: "Ce lot regroupe les liens X sur mise en production, scraping, OCR PDF, voix IA, SMS, clause e-commerce, backlink et design. Le texte des posts a ete recupere via X oEmbed ; les medias et details de threads restent a verifier si le post renvoie vers une image, video ou lien externe.",
     links: [
       "https://x.com/i/status/2040389536145178960",
       "https://x.com/i/status/2040390733262373036",
@@ -237,11 +237,11 @@ window.AI_RESOURCES = [
       "https://x.com/i/status/2039476192169112027"
     ],
     keyConcepts: ["deployment", "scraping", "OCR", "voice AI", "SMS", "e-commerce", "backlinks", "design"],
-    whatToLearn: "Lire le contenu exact, separer les astuces pratiques des claims marketing, puis construire 2 pipelines testables.",
-    action30: "Recuperer le texte des posts OCR, scraping et mise en prod, puis definir un pipeline unique 'source -> donnees -> production'.",
+    whatToLearn: "Separer les astuces pratiques des claims marketing, puis construire 2 pipelines testables.",
+    action30: "Lire les posts OCR, scraping et mise en prod dans x-oembed.md, puis definir un pipeline unique 'source -> donnees -> production'.",
     miniProject: "Service 'PDF vers fiche client' avec OCR, extraction structuree, validation humaine et export.",
-    risks: ["Les posts courts peuvent cacher des dependances ou conditions", "Verifier legalite scraping et RGPD"],
-    contentFile: "data/extracted_content/x-captures.md"
+    risks: ["Les posts courts peuvent cacher des dependances ou conditions", "Verifier legalite scraping et RGPD", "Verifier les liens externes et medias associes"],
+    contentFile: "data/extracted_content/x-oembed.md"
   },
   {
     id: "x-collecte-productisation",
@@ -253,10 +253,10 @@ window.AI_RESOURCES = [
     collectedDate: "2026-04-30",
     lastVerified: "2026-05-06",
     theme: "Agence IA / productisation",
-    status: "X inaccessible",
+    status: "contenu lu via X oEmbed",
     freshness: "a verifier",
-    confidence: "faible",
-    summary: "Ce lot regroupe les posts X sur agence IA, offres, multi-site et design. Pour l'instant, seules les URLs et les objets de mail sont connus ; il faut lire les posts avant d'en tirer une methode de vente ou de delivery.",
+    confidence: "moyenne",
+    summary: "Ce lot regroupe les posts X sur agence IA, offres, multi-site et design. Le texte des posts a ete recupere via X oEmbed ; il faut maintenant transformer les promesses en methodes de vente et de delivery verifiables.",
     links: [
       "https://x.com/i/status/2049519200868389092",
       "https://x.com/i/status/2049545571619213378",
@@ -265,10 +265,10 @@ window.AI_RESOURCES = [
     ],
     keyConcepts: ["offre IA", "agence", "multi-site", "design system", "demos vendables"],
     whatToLearn: "Identifier ce qui peut devenir une offre vendable et ce qui n'est qu'une inspiration.",
-    action30: "Recuperer le texte de ces 4 posts, puis noter : promesse, cible, livrable, preuve, prix possible.",
+    action30: "Lire ces 4 posts dans x-oembed.md, puis noter : promesse, cible, livrable, preuve, prix possible.",
     miniProject: "Page interne 'offre agent IA PME' avec 3 niveaux et une demo concrete.",
     risks: ["Ne pas copier une offre sans preuve de capacite", "Verifier faisabilite delivery"],
-    contentFile: "data/extracted_content/x-captures.md"
+    contentFile: "data/extracted_content/x-oembed.md"
   },
   {
     id: "x-collecte-crypto",
@@ -280,10 +280,10 @@ window.AI_RESOURCES = [
     collectedDate: "2026-05-06",
     lastVerified: "2026-05-06",
     theme: "Trading / crypto / fiscalite",
-    status: "X inaccessible",
+    status: "contenu lu via X oEmbed",
     freshness: "souvent obsolete",
-    confidence: "faible",
-    summary: "Ce lot contient des liens crypto et airdrops de 2023 a 2026. Par nature, les opportunites crypto vieillissent vite : meme si le contenu etait recupere, chaque lien doit etre traite comme potentiellement obsolete tant que tokenomics, dates, prix, eligibility et fiscalite ne sont pas verifies.",
+    confidence: "moyenne",
+    summary: "Ce lot contient des liens crypto et airdrops de 2023 a 2026. Le texte des posts a ete recupere via X oEmbed, mais les opportunites crypto vieillissent vite : chaque lien doit etre traite comme potentiellement obsolete tant que tokenomics, dates, prix, eligibility et fiscalite ne sont pas verifies.",
     links: [
       "https://x.com/i/status/2049765719601250344",
       "https://x.com/i/status/2047333423875084333",
@@ -301,7 +301,7 @@ window.AI_RESOURCES = [
     action30: "Marquer les liens 2023-2024 comme archives, et ne garder en actif que ceux qui ont encore une source officielle actuelle.",
     miniProject: "Tableau de scoring crypto : statut actuel, lien officiel, risque wallet, effort, deadline, upside, decision.",
     risks: ["Obsolescence forte", "Risque financier", "Risque phishing/wallet", "Besoin de sources officielles"],
-    contentFile: "data/extracted_content/x-captures.md"
+    contentFile: "data/extracted_content/x-oembed.md"
   },
   {
     id: "idee-logistique",
