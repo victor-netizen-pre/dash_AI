@@ -4,6 +4,7 @@ const INPUT = "Compilation_liens_X_competences.md";
 const OUT_DIR = "data/extracted_content";
 const OUT_JSON = `${OUT_DIR}/x-oembed.json`;
 const OUT_MD = `${OUT_DIR}/x-oembed.md`;
+const OUT_JS = "data/x-oembed.js";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -125,6 +126,7 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
   await writeFile(OUT_JSON, `${JSON.stringify({ generatedAt: new Date().toISOString(), count: records.length, records }, null, 2)}\n`);
+  await writeFile(OUT_JS, `window.X_OEMBED_RECORDS = ${JSON.stringify(records, null, 2)};\n`);
   await writeFile(OUT_MD, [
     "# Contenus X recuperes via oEmbed",
     "",

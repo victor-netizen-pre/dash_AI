@@ -208,6 +208,10 @@ select {
   max-width: 980px;
 }
 
+.content-text {
+  white-space: pre-wrap;
+}
+
 .card-grid {
   display: grid;
   gap: 12px;

@@ -10,6 +10,7 @@ Ouvrir `dashboard/index.html` dans un navigateur.
 
 - `Compilation_liens_X_competences.md` : index humain et plan d'integration.
 - `data/resources.js` : base structuree utilisee par le dashboard.
+- `data/x-oembed.js` : tweets lus automatiquement, chargeables par le dashboard en local.
 - `data/extracted_content/` : fiches de contenu lu ou a completer.
 - `dashboard/` : interface locale de consultation et filtrage.
 - `scripts/extract-x-oembed.mjs` : extraction automatique des textes X/Twitter via oEmbed.
@@ -28,5 +29,6 @@ Le script genere :
 
 - `data/extracted_content/x-oembed.md`
 - `data/extracted_content/x-oembed.json`
+- `data/x-oembed.js`
 
 Les medias, images, videos ou threads incomplets peuvent encore demander un complement dans `data/extracted_content/x-captures.md`.
